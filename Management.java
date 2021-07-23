@@ -5,8 +5,21 @@ import java.lang.management.MemoryMXBean;
 import java.lang.management.MemoryUsage;
 import java.time.Instant;
 import java.time.Duration;
-
+/**
+* this is the class that contains the main method being this
+* used to test the class.
+* @package intDinamicArrays: that includes all classes and 
+* interfaces that perform a dynamic array.
+* @author  Hector Jose Vurchio Hurtado
+* @version 1.0
+* @since   2021-07-21 
+*/
 public class Management{
+	/**
+	* This static method calculates the precentage of heap 
+	* memory used by an object.
+	* @return percentage of heap memory used.
+	*/
 	static long percHeapMemoryUsed(){
 		MemoryMXBean memoryBean = 
 			ManagementFactory.getMemoryMXBean();

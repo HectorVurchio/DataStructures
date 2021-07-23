@@ -1,4 +1,15 @@
 package intDinamicArrays;
+/**
+* this is the class that contains the main method being this
+* used to test the class.
+* @package intDinamicArrays: that includes all classes and 
+* interfaces that perform a dynamic array.
+* @implements DynamicArray, Interface that contains the methods 
+*	needed to operate the escential of an array data structure.
+* @author  Hector Jose Vurchio Hurtado
+* @version 1.0
+* @since   2021-07-21 
+*/
 public class IntArray implements DynamicArray{
 	private int point; 
 	private int capacity; 
@@ -41,6 +52,9 @@ public class IntArray implements DynamicArray{
 	public int size(){
 		return this.point;
 	} 
+	/**
+	* Method to grows the capacity of the array uppon request
+	*/
 	private void expand(){
 		int newCapacity = 2*capacity;
 		int[] myNewArray = new int[newCapacity];
@@ -50,6 +64,9 @@ public class IntArray implements DynamicArray{
 		myArray = myNewArray;
 		capacity = newCapacity;
 	}
+	/**
+	* Method to reduce the capacity of the array uppon request
+	*/
 	private void shrink(){
 		int newCapacity = point+1;
 		int[] myNewArray = new int[newCapacity];
