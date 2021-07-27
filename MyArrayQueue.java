@@ -1,4 +1,13 @@
 package tailoredQueue;
+/**
+* Class that collects objects in a FIFO principle.
+* @implements MyQueue, Interface with the basic
+* Queues operations.
+* @author Hector Jose Vurchio Hurtado
+* @version 1
+* @since 07/26/2021
+* @see https://www.linkedin.com/in/hector-vurchio/
+*/
 public class MyArrayQueue<E> implements MyQueue<E>{
 	private int leading;
 	private int trailing;
