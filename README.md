@@ -1,2 +1,2 @@
 # DataStructures
-Here I've deposited some excercises about data structures
+Here I've saved some excercises about data structures
